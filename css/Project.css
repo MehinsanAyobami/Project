@@ -1,0 +1,619 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;900&family=Zen+Dots&display=swap');
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/Font/Inter/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url('/Font/Inter/ClashDisplay-Regular.ttf') format('truetype');
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --error-check: 2px solid red;
+    --body-color: #020624;
+    --font-clash-display: 'Clash Display', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-zen-dots: 'Zen Dots', cursive;
+    --off-white: #E9F0FC;
+    --off-white-2: #C9D6F6;
+    --border-outline: #DFE7F9;
+    --btn-filled-text: #020E27;
+}
+
+body {
+    background-color: var(--body-color);
+    /* margin: 0; */
+    /* outline: 2px solid red; */
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+.container {
+    max-width: 75rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0rem 6rem;
+    /* outline: 2px solid red; */
+    /* margin: 20px; */
+}
+
+.hero-body {
+    width: 100%;
+    min-height: 38.65rem;
+    background-image: url('/Images/bg.png');
+    background-size: cover;
+    /* display: inline-block; */
+}
+
+.navigations {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #C9D6F6;
+    align-items: center;
+    margin: 0 auto;
+    /* position: sticky;
+    z-index: 9999;
+    top: 0;
+    left: 0; */
+    padding: 2rem 0;
+}
+
+.navigations .Calone a {
+    text-align: center;
+    font-weight: 400;
+    font-size: 24px;
+    font-family: var(--font-inter);
+    font-family: var(--font-zen-dots);
+    color: var(--off-white);
+}
+
+.nav-lists {
+    display: flex;
+    gap: 3.5rem;
+}
+
+.nav-lists li a {
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.buttons .log-in-button,
+.buttons .sign-up-button {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--off-white);
+    border-radius: 3.5rem;
+    padding: 1rem 1.5rem;
+    font-family: var(--font-inter);
+    font-weight: 500;
+}
+
+.sign-up-button {
+    color: var(--btn-filled-text);
+    background: var(--off-white);
+}
+
+.buttons .log-in-button {
+    color: var(--off-white);
+}
+
+/* Hero */
+.hero {
+    margin-top: 2rem;
+}
+
+.hero-content {
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    font-family: var(--font-clash-display);
+    line-height: 97%;
+    color: var(--off-white);
+}
+
+.studio-microphone-btns {
+    width: 13.5625rem;
+    height: max-content;
+    display: inline-flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 500px;
+}
+
+.studio-microphone-btns .boxed {
+    width: 6.5rem;
+    margin-left: 1rem;
+}
+
+.studio-microphone-btns .circle {
+    position: relative;
+    width: 5.3rem;
+    height: 5.3rem;
+    border-radius: 50%;
+    border: 1px solid var(--off-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio-microphone-btns .circle .link {
+    padding: 0.5rem;
+    background: var(--off-white);
+    border-radius: 50%;
+    display: inline-flex;
+    position: absolute;
+    right: -15px;
+    bottom: 24px;
+}
+
+.studio-microphone-btns .ghost-btn {
+    margin-left: 2px;
+    font-family: var(--font-montserrat);
+    color: var(--off-white);
+    transition: all .42s;
+
+}
+
+.studio-microphone-btns .ghost-btn:hover {
+    text-decoration: underline;
+}
+
+.hero-content .hero-content-text {
+    margin-top: 2.5rem;
+    width: 30.875rem;
+}
+
+.hero-content .hero-content-text p {
+    font-family: var(--font-montserrat);
+    color: var(--off-white);
+    line-height: 1.75rem;
+    /* 175% */
+}
+
+.hero-btns {
+    display: inline-flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.hero-btns .get-started,
+.hero-btns .switch {
+    border-radius: 3.5rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-outline);
+    padding: 1rem 1.5rem;
+    font-family: var(--font-montserrat);
+    margin-bottom: 5.125rem;
+    /* outline: var(--error-check); */
+}
+
+
+.hero-btns .get-started {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-filled-text);
+    background: var(--off-white);
+    line-height: normal;
+    font-weight: 500;
+    gap: 0.5rem;
+}
+
+.hero-btns .switch {
+    color: var(--off-white);
+}
+
+
+/* ! Active creators */
+.content {
+    color: var(--off-white);
+    /* display: inline-block; */
+    /* outline: var(--error-check); */
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content .img {
+    width: 35rem;
+    height: 23.125rem;
+    /* display: inline-block; */
+}
+
+.content .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    position: relative;
+}
+
+.content .img img::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.0) 0%,
+            rgba(0, 0, 0, 0.0) 70%,
+            rgba(0, 0, 0, 0.2) 80%,
+            rgba(0, 0, 0, 0.7) 90%,
+            rgba(0, 0, 0, 0.9) 95%,
+            rgba(0, 0, 0, 1.0) 100%);
+    z-index: 10;
+    top: 0;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.textbox .flex-textbox-top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    justify-content: space-between;
+    /* outline: var(--error-check); */
+    padding-bottom: 10px;
+}
+
+.textbox .flex-textbox-top .text-1 p {
+    font-size: 2rem;
+    font-family: var(--font-clash-display);
+    width: 19.6875rem;
+    line-height: 2.875rem;
+    /* 115% */
+}
+
+.textbox .flex-textbox-top .text-2 p {
+    font-size: 5rem;
+    font-family: var(--font-clash-display);
+    /* width: 19.6875rem; */
+    line-height: 2.875rem;
+    /* 115% */
+}
+
+.flex-textbox-top .line {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: var(--off-white);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+}
+
+.flex-textbox-bottom {
+    position: relative;
+    display: inline-flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    overflow: hidden;
+    gap: 20rem;
+}
+
+.flex-textbox-bottom .join-them {
+    display: inline-flex;
+    width: max-content;
+}
+
+.flex-textbox-bottom .join-them div {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    margin-left: -0.8rem !important;
+    border: 3px solid var(--body-color);
+}
+
+.flex-textbox-bottom .join-them .image1 {
+    margin-left: 0 !important;
+    border: 0;
+}
+
+.flex-textbox-bottom .join-them .image1,
+.flex-textbox-bottom .join-them .image2,
+.flex-textbox-bottom .join-them .image3,
+.flex-textbox-bottom .join-them .image4 {
+    background-size: cover;
+    background-image: url('/Images/hero-image.jpeg');
+}
+
+.flex-textbox-bottom .join-them .plus-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: var(--off-white); */
+    background: var(--off-white);
+}
+
+.flex-textbox-bottom .jt {
+    position: absolute;
+    display: flex;
+    gap: 10rem;
+    right: 410px;
+    padding-right: -5px;
+    top: 10px;
+}
+
+.flex-textbox-bottom .jt-text {
+    color: var(--off-white);
+    display: flex;
+    gap: 10rem;
+    font-family: var(--font-montserrat);
+}
+
+.flex-textbox-bottom .jt-text:hover {
+    text-decoration: underline;
+}
+
+.flex-textbox-bottom .join-them-text {
+    font-size: 20px;
+    font-family: var(--font-montserrat);
+}
+
+/* ! // Active creators */
+
+/* .content .img{
+    background-color: #fff;
+    width: 35rem;
+    height: 23.125rem;
+} */
+
+/* .content .textbox{
+    align-items: center;
+    gap: 76px;
+    top: 50px;
+    margin-top: 20px;
+     display: flex;
+    flex-direction: row;
+} */
+
+/* .content .textbox{
+    background-color: #fff;
+    display: inline-flex;
+    gap: 76px;
+    border-radius: 1rem;
+    width: 706px;
+    height: 128px;
+    justify-content: flex-start;
+    align-items: center;
+} */
+
+/* .img{
+    width: 35rem;
+    height: 370px;
+
+}
+
+.content .textbox .text-1{
+    width: 315px;
+    height: 96px;
+    color: var(--off-white);
+    font-size: 40px;
+    font-family: var(--font-clash-display);
+    font-weight: 500;
+    line-height: 46px;
+    word-wrap: break-word;
+}
+
+.content .textbox .text-2{
+    width: 19.6875rem;
+    color: var(--off-white);
+    font-size: 104px;
+    font-family: var(--font-clash-display);
+    font-weight: 500;
+    word-wrap: break-word;
+}
+
+.content .textbox .line{
+    width: 672px;
+    height: 0px;
+    border: 1px solid white;
+} */
+
+.content-2 {
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-2 .img-2 img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.content-2 .textbox-2{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-2 .textbox-2 .sph{
+    position: absolute;
+    color: var(--off-white);
+    font-size: 4.5rem;
+    font-family: var(--font-clash-display);
+    font-weight: 500;
+    line-height: 4.365rem;
+    left: 250;
+    word-wrap: break-word;
+}
+
+.content-2 .textbox-2 .enjoy-text{
+    width: 420px;
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-top: 100px;
+    margin-right: 3.44rem;
+    word-wrap: break-word;
+}
+
+.content-3{
+    position: relative;
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-3 .textbox-3{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-3 .textbox-3 .gar{
+    position: absolute;
+    color: var(--off-white);
+    font-family: var(--font-clash-display);
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 97%;
+}
+
+.content-3 .textbox-3 .pod-text{
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 28rem;
+    margin-top: 100px;
+}
+
+.content-3 .img-3 img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+ 
+.content-4{
+    position: relative;
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-4 .img-4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.content-4 .textbox-4{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-4 .textbox-4 .da{
+    position: absolute;
+    color: var(--off-white);
+    font-size: 4.5rem;
+    font-family: var(--font-clash-display);
+    font-weight: 500;
+    line-height: 4.365rem;
+    right: 20;
+}
+
+.content-4 .textbox-4 .prov-text{
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 420px;
+    margin-top: 100px;
+    margin-right: 3.44rem;
+}
