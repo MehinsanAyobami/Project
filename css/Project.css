@@ -112,7 +112,6 @@ picture {
     text-align: center;
     font-weight: 400;
     font-size: 24px;
-    font-family: var(--font-inter);
     font-family: var(--font-zen-dots);
     color: var(--off-white);
 }
@@ -492,7 +491,7 @@ picture {
     gap: 2rem;
 }
 
-.content-2 .img-2 img{
+.content-2 .img-2 img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -500,13 +499,13 @@ picture {
     border-radius: 1rem;
 }
 
-.content-2 .textbox-2{
+.content-2 .textbox-2 {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.content-2 .textbox-2 .sph{
+.content-2 .textbox-2 .sph {
     position: absolute;
     color: var(--off-white);
     font-size: 4.5rem;
@@ -517,7 +516,7 @@ picture {
     word-wrap: break-word;
 }
 
-.content-2 .textbox-2 .enjoy-text{
+.content-2 .textbox-2 .enjoy-text {
     width: 420px;
     color: var(--off-white-2);
     font-family: var(--font-montserrat);
@@ -529,7 +528,7 @@ picture {
     word-wrap: break-word;
 }
 
-.content-3{
+.content-3 {
     position: relative;
     margin-top: 3.78rem;
     margin-bottom: 30px;
@@ -540,13 +539,13 @@ picture {
     gap: 2rem;
 }
 
-.content-3 .textbox-3{
+.content-3 .textbox-3 {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.content-3 .textbox-3 .gar{
+.content-3 .textbox-3 .gar {
     position: absolute;
     color: var(--off-white);
     font-family: var(--font-clash-display);
@@ -555,7 +554,7 @@ picture {
     line-height: 97%;
 }
 
-.content-3 .textbox-3 .pod-text{
+.content-3 .textbox-3 .pod-text {
     color: var(--off-white-2);
     font-family: var(--font-montserrat);
     font-size: 1rem;
@@ -565,15 +564,15 @@ picture {
     margin-top: 100px;
 }
 
-.content-3 .img-3 img{
+.content-3 .img-3 img {
     /* position: absolute; */
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
- 
-.content-4{
+
+.content-4 {
     position: relative;
     margin-top: 3.78rem;
     margin-bottom: 30px;
@@ -584,20 +583,20 @@ picture {
     gap: 2rem;
 }
 
-.content-4 .img-4 img{
+.content-4 .img-4 img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1rem;
 }
 
-.content-4 .textbox-4{
+.content-4 .textbox-4 {
     display: flex;
     flex-direction: column;
     gap: 16px;
 }
 
-.content-4 .textbox-4 .da{
+.content-4 .textbox-4 .da {
     position: absolute;
     color: var(--off-white);
     font-size: 4.5rem;
@@ -607,7 +606,7 @@ picture {
     right: 20;
 }
 
-.content-4 .textbox-4 .prov-text{
+.content-4 .textbox-4 .prov-text {
     color: var(--off-white-2);
     font-family: var(--font-montserrat);
     font-size: 1rem;
@@ -616,4 +615,196 @@ picture {
     width: 420px;
     margin-top: 100px;
     margin-right: 3.44rem;
+}
+
+.content-5 {
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.content-5 .textbox-5 {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-5 .textbox-5 .trust {
+    color: var(--off-white);
+    font-family: var(--font-clash-display);
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 97%;
+    width: 28rem;
+    height: 6rem;
+}
+
+.content-5 .textbox-5 .find-text {
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 40.375rem;
+}
+
+.content-5 .textbox-5 .trial-box a {
+    display: flex;
+    padding: 1rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    border-radius: 3.5rem;
+    border: 1px solid var(--off-white-2);
+    width: 12.625rem;
+}
+
+.content-5 .textbox-5 .icons-1 {
+    display: flex;
+    flex-wrap: wrap;
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    background-size: cover;
+    flex-direction: row;
+    outline: var(--error-check);
+}
+
+.icons-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* outline: var(--error-check); */
+    flex-direction: row;
+    justify-content: space-between;
+    /* background: #E9F0FC; */
+    column-gap: 10px;
+}
+
+.icon {
+    border-radius: 3rem;
+}
+
+/* .icon-1{
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 2rem;
+} */
+
+/* .icon-1 .icon-2 .icon-3,
+.icon-4 .icon-5 .icon-6 {
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 1rem;
+} */
+
+.content-6 {
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* .content-6{
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+} */
+
+.content-6 .textbox-6 {
+    gap: 16px;
+}
+
+.content-6 .textbox-6 .connect p {
+    color: var(--off-white);
+    font-family: var(--font-clash-display);
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 97%;
+    width: 75.5rem;
+}
+
+.content-6 .textbox-6 .believe-text {
+    color: var(--off-white-2);
+    font-family: var(--font-montserrat);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75rem;
+    width: 40.375rem;
+    margin-top: 20px;
+}
+
+.content-6 .textbox-6 .get-started a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--btn-filled-text);
+    background: var(--off-white);
+    line-height: normal;
+    font-weight: 500;
+    gap: 0.5rem;
+    border-radius: 3.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 10px;
+    width: 10rem;
+}
+
+.nav-foot {
+    margin-top: 3.78rem;
+    margin-bottom: 30px;
+    margin-left: 6rem;
+    margin-right: 3.88rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.nav-foot .copyright {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-foot .clh {
+    display: flex;
+    gap: 1rem;
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-foot .privacy {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Montserrat;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.nav-foot .socials {
+    display: flex;
+    height: 1.5rem;
+    padding: 0.125rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.8125rem;
 }
