@@ -678,30 +678,15 @@ picture {
 
 .icons-1 {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* outline: var(--error-check); */
+    grid-template-columns: repeat(3, 1fr);
     flex-direction: row;
     justify-content: space-between;
-    /* background: #E9F0FC; */
     column-gap: 10px;
 }
 
 .icon {
     border-radius: 3rem;
 }
-
-/* .icon-1{
-    width: 12.5rem;
-    height: 12.5rem;
-    border-radius: 2rem;
-} */
-
-/* .icon-1 .icon-2 .icon-3,
-.icon-4 .icon-5 .icon-6 {
-    width: 12.5rem;
-    height: 12.5rem;
-    border-radius: 1rem;
-} */
 
 .content-6 {
     margin-top: 3.78rem;
@@ -711,17 +696,8 @@ picture {
     display: flex;
     justify-content: space-between;
     gap: 2rem;
+    overflow: hidden;
 }
-
-/* .content-6{
-    margin-top: 3.78rem;
-    margin-bottom: 30px;
-    margin-left: 6rem;
-    margin-right: 3.88rem;
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-} */
 
 .content-6 .textbox-6 {
     gap: 16px;
@@ -791,7 +767,14 @@ picture {
     line-height: normal;
 }
 
-.nav-foot .privacy {
+.nav-foot .clh,
+.careers a,
+.legal a,
+.help a{
+ color: rgba(255, 255, 255, 0.80);
+}
+
+.nav-foot .privacy a{
     color: rgba(255, 255, 255, 0.80);
     font-family: Montserrat;
     font-size: 1rem;
